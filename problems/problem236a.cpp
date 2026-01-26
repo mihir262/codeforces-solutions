@@ -8,7 +8,7 @@ int main() {
     std::string username;
     std::cin >> username;
 
-    if (username.length()%2 == 0 ) {
+  if (username.length()%2 == 0 ) {
         std::cout << "CHAT WITH HER!\n";
     } else {
         std::cout << "IGNORE HIM!\n";
