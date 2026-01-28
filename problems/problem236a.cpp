@@ -2,16 +2,18 @@
 using namespace std;
 
 int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    
-    std::string username;
-    std::cin >> username;
+    string username;
+    cin >> username;
 
-  if (username.length()%2 == 0 ) {
-        std::cout << "CHAT WITH HER!\n";
+    set<char> unique_chars;
+    for (char c : username) {
+        unique_chars.insert(c);
+    }
+
+    if (unique_chars.size() % 2 == 0) {
+        cout << "CHAT WITH HER!\n";
     } else {
-        std::cout << "IGNORE HIM!\n";
+        cout << "IGNORE HIM!\n";
     }
 
     return 0;
